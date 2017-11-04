@@ -1,0 +1,18 @@
+[
+  {
+    "image" : "wraith_1938.jpg",
+    "make" : "Rolls Royce",
+    "model" : "Wraith",
+    "year" : "1938",
+    "engine_size" : "4257cc",
+    "transmission" : "4-speed manual"
+  },
+  {
+    "image" : "wraith_2013.jpg",
+    "make" : "Rolls Royce",
+    "model" : "Wraith",
+    "year" : "2013",
+    "engine_size" : "6592cc",
+    "transmission" : "8-speed manual"
+  }
+]

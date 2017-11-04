@@ -1,0 +1,18 @@
+[
+  {
+    "image" : "ghost_2009.jpg",
+    "make" : "Rolls Royce",
+    "model" : "Ghost",
+    "year" : "2009",
+    "engine_size" : "6592cc",
+    "transmission" : "8-speed automatic"
+  },
+  {
+    "image" : "ghost_2011.jpg",
+    "make" : "Rolls Royce",
+    "model" : "Ghost",
+    "year" : "2011",
+    "engine_size" : "6592cc",
+    "transmission" : "8-speed automatic"
+  }
+]
