@@ -180,14 +180,3 @@ h1,h2,h4,h5,h6 {
 				#prev.disabled {
 					opacity: 0.2;
 				}
-				#container {
-					width: 100%;
-				}
-				#container1{
-					width: 30%;
-					float: left;
-				}
-#container2{
-	width: 70%;
-	float: right;
-}
