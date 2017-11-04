@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Cars Timeline</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset-navigation.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style-navigation.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="../sraphael.min.js"></script>
+	<script type="text/javascript" src="raphael.icons.min.js"></script>
+	<script type="text/javascript" src="wheelnav.min.js"></script>
+
+	<style>
+
+
+		#wheelDiv {
+			height: 400px;
+			width: 400px;
+			margin: auto;
+		}
+
+		#wheelDiv>svg {
+			height: 100%;
+			width: 100%;
+		}
+
+		@media (max-width: 600px) {
+			#wheelDiv {
+				height: 350px;
+				width: 350px;
+			}
+		}
+
+		@media (max-width: 400px) {
+			#wheelDiv {
+				height: 300px;
+				width: 300px;
+			}
+		}
+
+		/* Insert generated CSS code from here -> http://pmg.softwaretailoring.net */
+		#piemenu > svg { width: 100%; height: 100%; }
+		#piemenu { height: 400px; width: 400px; margin:auto; }
+		@media (max-width: 400px) { #piemenu { height: 300px; width: 300px; } }
+
+		[class|=wheelnav-piemenu-slice-basic] { fill: #497F4C; stroke: none; }
+		[class|=wheelnav-piemenu-slice-selected] { fill: #497F4C; stroke: none; }
+		[class|=wheelnav-piemenu-slice-hover] { fill: #497F4C;  stroke: none; fill-opacity: 0.77; cursor: pointer; }
+
+		[class|=wheelnav-piemenu-title-basic] { fill: #333; stroke: none; }
+		[class|=wheelnav-piemenu-title-selected] { fill: #fff; stroke: none; }
+		[class|=wheelnav-piemenu-title-hover] { fill: #222; stroke: none; cursor: pointer; }
+		[class|=wheelnav-piemenu-title] > tspan { font-family: Impact, Charcoal, sans-serif; font-size: 20px; }
+
+		.wheelnav-piemenu-spreader-in,
+		.wheelnav-piemenu-spreader-out { fill: #444; stroke: #444; stroke-width: 2; cursor: pointer; }
+		.wheelnav-piemenu-spreadertitle-in,
+		.wheelnav-piemenu-spreadertitle-out { fill: #eee; stroke: #444; cursor: pointer; }
+
+		.wheelnav-piemenu-marker { fill: #444; stroke: #444; stroke-width: 2; }
+
+	</style>
+
+	<script type="text/javascript">
+
+        window.onload = function () {
+
+
+            //This is the place for code snippets from the documentation -> http://wheelnavjs.softwaretailoring.net/documentation.html
+
+            //Insert generated JavaScript code from here -> http://pmg.softwaretailoring.net
+            var piemenu = new wheelnav('piemenu');
+            piemenu.spreaderInTitle = icon.plus;
+            piemenu.spreaderOutTitle = icon.cross;
+            piemenu.spreaderRadius = piemenu.wheelRadius * 0.13;
+            piemenu.clockwise = false;
+            piemenu.wheelRadius = piemenu.wheelRadius * 0.83;
+            piemenu.createWheel();
+
+        };
+
+	</script>
+
+</head>
+
+<body>
+<header>
+	<div class="cd-logo"><a href="#0"><h1 id="carsTimelineTitle">Cars Timeline</h1></a></div>
+
+	<nav class="cd-main-nav-wrapper">
+		<ul class="cd-main-nav">
+
+			<!-- <li><a href="#0"></a></li>
+            <li><a href="#0"></a></li> -->
+
+			<li>
+				<a href="#0" class="cd-subnav-trigger"><span>Car Models</span></a>
+
+				<ul>
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<li><a href="#0">Rolls Royce</a></li>
+					<li><a href="#0">Bentley</a></li>
+					<li><a href="#0">BMW</a></li>
+					<!-- <li><a href="#0">BMW</a></li>
+                    <li><a href="#0">Audi</a></li> -->
+					<li><a href="#0" class="placeholder">Placeholder</a></li>
+				</ul>
+			</li>
+		</ul> <!-- .cd-main-nav -->
+	</nav> <!-- .cd-main-nav-wrapper -->
+
+	<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+</header>
+<div id="container">
+	<div id="container2">
+		<div id="timeline">
+			<ul id="dates">
+				<li><a href="#1920" class="selected">1920</a></li>
+				<li><a href="#1930">1930</a></li>
+				<li><a href="#1940">1940</a></li>
+				<li><a href="#1950">1950</a></li>
+				<li><a href="#1960">1960</a></li>
+				<li><a href="#1970">1970</a></li>
+				<li><a href="#1980">1980</a></li>
+				<li><a href="#1990">1990</a></li>
+				<li><a href="#2000">2000</a></li>
+				<li><a href="#2010">2010</a></li>
+				<li><a href="#2017">2017</a></li>
+			</ul>
+			<ul id="issues">
+
+
+				<li id="1920" class="selected">
+					<img src=.. />
+					<h1>1920</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+
+				<li id="1930">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/2.png" />
+					<h1>1930</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="1940">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/3.png" />
+					<h1>1940</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="1950">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/4.png" />
+					<h1>1950</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="1960">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/5.png" />
+					<h1>1960</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="1970">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/6.png" />
+					<h1>1970</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="1980">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/7.png" />
+					<h1>1980</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="1990">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/8.png" />
+					<h1>1990</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="2000">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/9.png" />
+					<h1>2000</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+				<li id="2017">
+					<img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/10.png" />
+					<h1>2017</h1>
+					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+				</li>
+			</ul>
+			<div id="grad_top"></div>
+			<div id="grad_bottom"></div>
+			<a href="#" id="next">+</a>
+			<a href="#" id="prev">-</a>
+		</div>
+	</div>
+	<div id="container1">
+		<div id='piemenu' data-wheelnav
+			 data-wheelnav-slicepath='PieSlice'
+			 data-wheelnav-spreader data-wheelnav-spreaderpath='PieSpreader'
+			 data-wheelnav-marker data-wheelnav-markerpath='TriangleMarker'
+			 data-wheelnav-navangle='0'
+			 data-wheelnav-cssmode
+			 data-wheelnav-init>
+			<div data-wheelnav-navitemtext='Phantom 1' ></div>
+			<div data-wheelnav-navitemtext='Phantom 2' ></div>
+			<div data-wheelnav-navitemtext='Phantom 3' ></div>
+			<div data-wheelnav-navitemtext='Phantom 4' ></div>
+			<div data-wheelnav-navitemtext='Phantom 5'></div>
+			<div data-wheelnav-navitemtext='Phantom 6'></div>
+			<div data-wheelnav-navitemtext='Phantom 7'></div>
+			<div data-wheelnav-navitemtext='Phantom 8'></div>
+			<div data-wheelnav-navitemtext='Phantom 9'></div>
+
+		</div>
+	</div>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='http://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js'></script>
+
+	<script src="js/index.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+</body>
+</html>
