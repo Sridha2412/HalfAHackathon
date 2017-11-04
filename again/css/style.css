@@ -4,7 +4,7 @@
 }
 
 body {
-	background: #222;
+	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/zwartevilt.png");
 	font-family: Georgia, serif;
 	color: #fff;
 	font-size: 14px;
@@ -35,6 +35,20 @@ h1,h2,h4,h5,h6 {
 	h2 {
 		font-size: 14px;
 	}
+@font-face {
+    font-family: futuristicFont;
+    src: url("D3Euronism.ttf") format("opentype");
+}
+#carsTimelineTitle{
+	color: #fff; 
+	font-family: 'futuristicFont'; 
+	font-size: 56px; 
+	/* font-weight: 800; */
+	line-height: 72px; 
+	margin-top: 2%; 
+	text-align: center; 
+	text-transform: uppercase;
+}
 .sociales {
 	text-align: center;
 	margin-bottom: 20px;
@@ -129,7 +143,7 @@ h1,h2,h4,h5,h6 {
 			height: 80px;
 			position: absolute;
 		}
-			#grad_top {
+			/* #grad_top {
 		        top: 0;
 		        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x;
 			}
@@ -137,7 +151,7 @@ h1,h2,h4,h5,h6 {
 		        bottom: 0;
 		        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;
 			}
-		
+		*/
 		#next,
 		#prev {
 			position: absolute;

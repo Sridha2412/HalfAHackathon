@@ -30,6 +30,10 @@ a {
 Main Components 
 
 -------------------------------- */
+@font-face {
+    font-family: futuristicFont;
+    src: url("D3Euronism.ttf") format("opentype");
+}
 header {
   position: relative;
   z-index: 3;
@@ -37,7 +41,8 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #33414a;
+  background-color: rgba(35, 75, 140, 0.3);
+  /* background: url("https://www.toptal.com/designers/subtlepatterns/patterns/black_lozenge.png"); */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Force Hardware Acceleration */
@@ -255,6 +260,14 @@ header::before {
 .cd-main-nav .cd-subnav-trigger, .cd-main-nav .go-back a {
   position: relative;
 }
+@font-face {
+    font-family: carsMenuFont;
+    src: url("Autobus-Bold.ttf") format("opentype");
+}
+.cd-subnav-trigger span{
+  font-family: carsMenuFont;
+  font-size: 20px;
+}
 .cd-main-nav .cd-subnav-trigger::before, .cd-main-nav .cd-subnav-trigger::after, .cd-main-nav .go-back a::before, .cd-main-nav .go-back a::after {
   /* arrow icon in CSS */
   content: '';
@@ -357,7 +370,16 @@ header::before {
     -webkit-transition: border 0.3s;
     -moz-transition: border 0.3s;
     transition: border 0.3s;
+    font-size: 18px;
   }
+   .cd-main-nav .cd-subnav-trigger ul li a{
+    font-size: 20px;
+   }
+   .cd-main-nav li ul li a{
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+   }
   .cd-main-nav .cd-subnav-trigger:hover {
     border-color: rgba(255, 255, 255, 0.4);
   }
@@ -384,7 +406,9 @@ header::before {
   }
   .cd-main-nav li ul {
     height: 80px;
-    background-color: #7e4d7e;
+    background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;
+    backface-visibility: 
+    background-color: #ffa31a;
     /* padding left = logo size + logo left position*/
     padding: 0 5% 0 calc(5% + 124px);
     -webkit-transform: translateY(-80px);
@@ -442,6 +466,10 @@ header::before {
     -webkit-transition: -webkit-transform 0.3s 0.2s, opacity 0.3s 0.2s;
     -moz-transition: -moz-transform 0.3s 0.2s, opacity 0.3s 0.2s;
     transition: transform 0.3s 0.2s, opacity 0.3s 0.2s;
+  }
+  .cd-main-nav.moves-out li ul li a{
+    font-family: carsMenuFont;
+    font-size: 24px;
   }
   .cd-main-nav.moves-out .cd-subnav-trigger::before, .cd-main-nav.moves-out .cd-subnav-trigger::after {
     width: 14px;
