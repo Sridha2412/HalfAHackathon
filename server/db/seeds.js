@@ -83,6 +83,6 @@ db.cars.insert([
     engine_size: "6.75L",
     transmission: "8-speed automatic"
   }
-]),
+]);
 
 db.cars.find();
